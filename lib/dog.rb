@@ -27,17 +27,7 @@ def self.print_all
 end
 
 def self.save
-    save = {}
-      @@save.each do |name|
-      if !save.has_key?(name)
-        save[name] = 1
-      else
-        save[name] += 1
-      end
-      name = @@all
-    end
-    save
-    @@all << self
+      @@all << self
   end
 
 end
